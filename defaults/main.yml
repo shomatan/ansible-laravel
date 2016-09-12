@@ -1,0 +1,3 @@
+---
+laravel_user: nginx
+laravel_root: /var/www/html

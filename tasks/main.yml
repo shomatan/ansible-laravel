@@ -1,0 +1,8 @@
+---
+
+- name: Create every minutes generate sitemap cronjob.
+  cron:
+    name: "Run Laravel tasks (every minutes schedule)"
+    user: "{{ laravel_user }}"
+    job: "{{ php_execute_filename }} {{ laravel_root }}/artisan schedule:run >> /dev/null 2>&1"
+    cron_file: laravel
