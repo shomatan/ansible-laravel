@@ -1,6 +1,6 @@
 ---
 
-- name: Create every minutes generate sitemap cronjob.
+- name: Create every minutes cronjob.
   cron:
     name: "Run Laravel tasks (every minutes schedule)"
     user: "{{ laravel_user }}"
