@@ -8,7 +8,12 @@ None.
 |Key|Type|Description|Default|
 |:--|:---|:----------|:------|
 |laravel_user|String|Execute user.|nginx|
-|laravel_cron|Dict|Cron entries.|{}|
+|laravel_cron|Hash|Cron entries. See below.|{}|
+
+#### laravel_cron
+|Key|Type|Description|
+|:--|:---|:----------|
+|path|String|Project's document root.|
 
 ### Dependencies
 + php
