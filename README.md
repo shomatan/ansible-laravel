@@ -16,7 +16,7 @@ None.
 |path|String|Project's document root.|
 
 ### Dependencies
-+ php
++ [php](https://github.com/shomatan/ansible-php.git)
 
 ### Example Playbook
 
