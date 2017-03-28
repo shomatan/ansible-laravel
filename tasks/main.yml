@@ -3,6 +3,6 @@
   cron:
     name: "Run Laravel tasks (every minutes schedule)"
     user: "{{ item.value.user }}"
-    job: "{{ php_execute_filename }} {{ item.value.path }}/artisan schedule:run >> /dev/null 2>&1"
+    job: "{{ item.value.php_bin_path | default("/usr/bin/php") }} {{ item.value.path }}/artisan schedule:run >> /dev/null 2>&1"
     cron_file: laravel_{{ item.key }}
   with_dict: "{{ laravel_cron }}"

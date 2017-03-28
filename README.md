@@ -16,7 +16,7 @@ Role Variables
 Dependencies
 ------------
 
-- shomatan.php-fpm
+- shomatan.cron
 
 Example Playbook
 ----------------
@@ -26,13 +26,14 @@ Example Playbook
         - role: shomatan.laravel
           laravel_cron:
             my_app:
+              php_bin_path: /usr/bin/php # default
               user: nginx
               path: /var/www/my_app
 
 License
 -------
 
-BSD
+MIT
 
 Author Information
 ------------------
